@@ -13,26 +13,27 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="36dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginRight="52dp"
         android:text="@string/lblNotaThree"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/inputNotaOneTwo2"
+        app:layout_constraintEnd_toStartOf="@+id/inputNotaThree"
         app:layout_constraintHorizontal_bias="0.223"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notaTwo" />
 
     <EditText
-        android:id="@+id/inputNotaOneTwo2"
+        android:id="@+id/inputNotaThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/inputNotaTwo"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNotaOneTwo" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/notaThree"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/titleScreen"
@@ -49,29 +50,27 @@
         android:id="@+id/inputNotaOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/inputNotaOne"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleScreen"
-        android:autofillHints="" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/notaOne"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/inputNotaOneTwo"
+        android:id="@+id/inputNotaTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
+        android:autofillHints=""
         android:ems="10"
         android:hint="@string/inputNotaTwo"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNotaOne"
-        android:autofillHints="" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/notaTwo"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/notaOne"
@@ -99,7 +98,7 @@
         android:layout_marginRight="52dp"
         android:text="@string/lblNotaTwo"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/inputNotaOneTwo"
+        app:layout_constraintEnd_toStartOf="@+id/inputNotaTwo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/notaOne" />
 
@@ -107,12 +106,13 @@
         android:id="@+id/btnCalcular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="28dp"
+        android:onClick="calcular_media"
         android:text="@string/btnCalcular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/inputNotaOneTwo2" />
+        app:layout_constraintTop_toBottomOf="@+id/inputNotaThree" />
 
     <TextView
         android:id="@+id/resultNumber"
@@ -122,34 +122,20 @@
         android:text="@string/result"
         android:textColor="#673AB7"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/resultText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.153" />
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="32dp"
         android:text="@string/resultText"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
-
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="@string/resultNota"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
