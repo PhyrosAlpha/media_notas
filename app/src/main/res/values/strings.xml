@@ -4,6 +4,7 @@
     <string name="btnCalcular">Calcular</string>
     <string name="lblNotaOne">Nota 1</string>
     <string name="lblNotaTwo">Nota 2</string>
+    <string name="lblNotaThree">Nota 3</string>
     <string name="inputNotaOne">Digita a nota</string>
     <string name="inputNotaTwo">Digite a nota</string>
     <string name="result">0</string>
