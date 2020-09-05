@@ -5,9 +5,12 @@
     <string name="lblNotaOne">Nota 1</string>
     <string name="lblNotaTwo">Nota 2</string>
     <string name="lblNotaThree">Nota 3</string>
-    <string name="inputNotaOne">Digita a nota</string>
-    <string name="inputNotaTwo">Digite a nota</string>
+    <string name="inputNotaOne">0</string>
+    <string name="inputNotaTwo">0</string>
+    <string name="inputNotaThree">0</string>
     <string name="result">0</string>
     <string name="resultText">Resultado</string>
     <string name="resultNota" />
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
 </resources>
