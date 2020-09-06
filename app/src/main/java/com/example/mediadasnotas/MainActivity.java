@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void calcular_media(View view) {
+    public void calcular_media(View view) {  //Calcular a média das notas dos inputs
         try {
 
             EditText inputNotaOne = findViewById(R.id.inputNotaOne);
