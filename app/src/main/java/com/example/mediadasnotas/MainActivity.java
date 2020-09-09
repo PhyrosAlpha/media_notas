@@ -9,12 +9,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import java.util.ArrayList;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+     //   setContentView(R.layout.login);
     }
 
     public void calcular_media(View view) {  //Calcular a média das notas dos inputs
